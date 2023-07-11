@@ -33,6 +33,11 @@ class LaravelGoogleShoppingFeed
         return $feed;
     }
 
+    public function setCurrency(string $currency)
+    {
+        $this->currency = $currency;
+    }
+
     public function addItem(array $item): bool
     {
         foreach ($this->requiredProductFields as $field) {
